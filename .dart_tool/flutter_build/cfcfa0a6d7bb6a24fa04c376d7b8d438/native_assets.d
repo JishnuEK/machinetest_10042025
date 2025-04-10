@@ -1,0 +1,1 @@
+ /Volumes/Work/FlutterDev/JiGSsInfo/machinetest_10042025/.dart_tool/flutter_build/cfcfa0a6d7bb6a24fa04c376d7b8d438/native_assets.yaml: 
