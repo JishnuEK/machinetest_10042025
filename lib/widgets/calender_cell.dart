@@ -56,6 +56,7 @@ class CalendarCell extends StatelessWidget {
                       fontWeight: isSelected || isToday
                           ? FontWeight.bold
                           : FontWeight.normal,
+                      fontSize: 13,
                       color: isToday
                           ? Colors.white
                           : isSelected

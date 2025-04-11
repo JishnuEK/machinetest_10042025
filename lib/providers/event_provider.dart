@@ -62,7 +62,9 @@ class EventProvider with ChangeNotifier {
       ScaffoldMessenger.of(
         Get.context!,
       ).showSnackBar(
-        SnackBar(content: Text('${e}')),
+        SnackBar(
+          content: Text('${e}'),
+        ),
       );
       _events = [];
     } finally {

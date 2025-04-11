@@ -31,6 +31,7 @@ class MonthDropdown extends StatelessWidget {
           value: month,
           child: Text(
             getMonthNameMMM(month),
+            style: const TextStyle(fontSize: 15, fontWeight: FontWeight.normal),
           ),
         );
       }).toList(),

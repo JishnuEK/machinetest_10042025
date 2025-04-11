@@ -111,6 +111,7 @@ class _WeekdayHeader extends StatelessWidget {
           day,
           style: const TextStyle(
             fontWeight: FontWeight.normal,
+            fontSize: 12,
             color: Colors.grey,
           ),
         ),

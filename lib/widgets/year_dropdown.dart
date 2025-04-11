@@ -38,6 +38,7 @@ class YearDropdown extends StatelessWidget {
           value: year,
           child: Text(
             year.toString(),
+            style: const TextStyle(fontSize: 15, fontWeight: FontWeight.normal),
           ),
         );
       }).toList(),

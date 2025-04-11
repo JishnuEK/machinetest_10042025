@@ -21,7 +21,10 @@ class EventList extends StatelessWidget {
         if (eventProvider.items.isEmpty)
           const Text(
             'No events scheduled',
-            style: TextStyle(color: Colors.grey),
+            style: TextStyle(
+              color: Colors.grey,
+              fontSize: 15,
+            ),
           )
         else
           ListView.builder(
@@ -60,8 +63,17 @@ class _EventCard extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Expanded(child: Text(event.title)),
-                  Text(event.time),
+                  Expanded(
+                      child: Text(
+                    event.title,
+                    style: const TextStyle(
+                        fontSize: 15, fontWeight: FontWeight.bold),
+                  )),
+                  Text(
+                    event.time,
+                    style: const TextStyle(
+                        fontSize: 15, fontWeight: FontWeight.normal),
+                  ),
                 ],
               ),
               const SizedBox(height: 10),
@@ -74,8 +86,12 @@ class _EventCard extends StatelessWidget {
               Row(
                 children: [
                   Expanded(
-                      child: Text(
-                          customFormatDatedmyy(eventProvider.selectedDate))),
+                    child: Text(
+                      customFormatDatedmyy(eventProvider.selectedDate),
+                      style: const TextStyle(
+                          fontSize: 14, fontWeight: FontWeight.normal),
+                    ),
+                  ),
                   if (event.conflicted)
                     const Icon(
                       Icons.error_outline,
